@@ -6,16 +6,21 @@
   <title>Détail - Package A</title>
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      background-color: #000;
-      color: white;
-      font-family: monospace;
-      display: flex;
-      flex-direction: row;
-      height: 100vh;
-    }
+     margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: white;
+  font-family: monospace;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  animation: fadeIn 1s ease-in;
+}
 
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
     .description {
       flex: 3;
       padding: 60px;

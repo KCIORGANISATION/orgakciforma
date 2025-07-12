@@ -83,9 +83,31 @@
       text-decoration: none;
       border-radius: 8px;
     }
+
+    .back-arrow {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      text-decoration: none;
+      font-size: 1.2em;
+      color: #00ffff;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 8px 14px;
+      border: 1px solid #00ffff;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      z-index: 1000;
+    }
+
+    .back-arrow:hover {
+      background-color: rgba(0, 255, 255, 0.2);
+      transform: translateX(-5px);
+    }
   </style>
 </head>
 <body>
+  <a href="javascript:history.back()" class="back-arrow">← Retour</a>
+
   <div class="description">
     <h1>Pack Global - Tout débloquer, d’un coup.</h1>
     <p>
@@ -110,3 +132,4 @@
   </div>
 </body>
 </html>
+

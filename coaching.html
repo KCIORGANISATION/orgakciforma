@@ -14,14 +14,22 @@
       display: flex;
       flex-direction: row;
       height: 100vh;
-      animation: unblur 1.2s ease-out;
-      filter: blur(12px);
+      animation: swipeReveal 1.2s ease-out;
+      background-image: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(0,255,255,0.2) 40%, rgba(0,0,0,1) 100%);
+      background-size: 200% 200%;
+      background-position: top left;
       animation-fill-mode: forwards;
     }
 
-    @keyframes unblur {
-      from { filter: blur(12px); opacity: 0; }
-      to { filter: blur(0); opacity: 1; }
+    @keyframes swipeReveal {
+      0% {
+        background-position: top left;
+        opacity: 0;
+      }
+      100% {
+        background-position: bottom right;
+        opacity: 1;
+      }
     }
 
     .description {
@@ -97,3 +105,4 @@
   </div>
 </body>
 </html>
+

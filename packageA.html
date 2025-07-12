@@ -6,22 +6,22 @@
   <title>Détail - Package A</title>
   <style>
     body {
-      <a href="javascript:history.back()" class="back-arrow">← Retour</a>
-     margin: 0;
-  padding: 0;
-  background-color: #000;
-  color: white;
-  font-family: monospace;
-  display: flex;
-  flex-direction: row;
-  height: 100vh;
-  animation: fadeIn 1s ease-in;
-}
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: white;
+      font-family: monospace;
+      display: flex;
+      flex-direction: row;
+      height: 100vh;
+      animation: fadeIn 1s ease-in;
+    }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     .description {
       flex: 3;
       padding: 60px;
@@ -73,29 +73,33 @@
       text-decoration: none;
       border-radius: 8px;
     }
+
+    .back-arrow {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      text-decoration: none;
+      font-size: 1.2em;
+      color: #00ffff;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 8px 14px;
+      border: 1px solid #00ffff;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      z-index: 1000;
+    }
+
+    .back-arrow:hover {
+      background-color: rgba(0, 255, 255, 0.2);
+      transform: translateX(-5px);
+    }
   </style>
-  .back-arrow {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  text-decoration: none;
-  font-size: 1.2em;
-  color: #00ffff;
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 8px 14px;
-  border: 1px solid #00ffff;
-  border-radius: 8px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  z-index: 1000;
-}
-
-.back-arrow:hover {
-  background-color: rgba(0, 255, 255, 0.2);
-  transform: translateX(-5px);
-}
-
 </head>
 <body>
+
+  <!-- Flèche de retour -->
+  <a href="javascript:history.back()" class="back-arrow">← Retour</a>
+
   <div class="description">
     <h1>Package A - Développement personnel</h1>
     <p>

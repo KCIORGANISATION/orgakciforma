@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Formations à l'unité</title>
   <style>
     body {
@@ -12,42 +12,69 @@
       padding: 2rem;
       margin: 0;
     }
+
     h1 {
       text-align: center;
       margin-bottom: 2rem;
       font-size: 2rem;
       color: #ffffff;
     }
+
     .section {
       margin-bottom: 3rem;
     }
+
     .formations {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: 2rem;
     }
+
     .formation {
       background-color: #0f0f0f;
       border: 2px solid #2196f3;
       border-radius: 20px;
       padding: 1.2rem;
-      box-shadow: 0 0 15px rgba(0, 136, 255, 0.1);
+      position: relative;
+      overflow: hidden;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 15px rgba(0, 136, 255, 0.1);
     }
+
+    .formation::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at center, rgba(33, 150, 243, 0.1), transparent 70%);
+      transform: scale(0);
+      transition: transform 0.5s ease-out;
+      pointer-events: none;
+    }
+
+    .formation:hover::before {
+      transform: scale(1);
+    }
+
     .formation:hover {
-      transform: scale(1.03);
+      transform: scale(1.05);
       box-shadow: 0 0 25px rgba(33, 150, 243, 0.5);
     }
+
     .formation h3 {
       margin-top: 0;
       font-size: 1.1rem;
       color: #4fc3f7;
     }
+
     .price {
       font-weight: bold;
       color: #2196f3;
       margin-top: 0.5rem;
     }
+
     h2 {
       border-left: 6px solid #2196f3;
       padding-left: 10px;
@@ -132,4 +159,5 @@
   </div>
 </body>
 </html>
+
 

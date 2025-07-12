@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coaching Personnalisé</title>
+  <title>Coaching personnalisé</title>
   <style>
     body {
       margin: 0;
@@ -14,6 +14,14 @@
       display: flex;
       flex-direction: row;
       height: 100vh;
+      animation: unblur 1.2s ease-out;
+      filter: blur(12px);
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes unblur {
+      from { filter: blur(12px); opacity: 0; }
+      to { filter: blur(0); opacity: 1; }
     }
 
     .description {
@@ -71,19 +79,21 @@
 </head>
 <body>
   <div class="description">
-    <h1>Coaching Personnalisé</h1>
+    <h1>Coaching personnalisé</h1>
     <p>
-      Besoin d'un plan 100% adapté à ta situation ? Tu veux progresser plus vite, corriger tes faiblesses, ou atteindre un objectif précis ?<br><br>
-      Le coaching personnalisé te permet d'obtenir une analyse complète de ton profil, des conseils sur mesure et un accompagnement direct via Discord.<br><br>
-      Tu poses tes questions, tu reçois un plan clair, et tu peux échanger en direct. Mental, business, sport, organisation, sociabilité... on couvre tout.<br><br>
-      Accès via le serveur Discord (gratuit). Les coachings sont ensuite adaptés selon ton besoin (disponibilité, intensité, suivi).
+      Besoin d'un accompagnement sur mesure ? Le coaching KCI est là pour t'aider.
+      Que tu veuilles améliorer ta discipline, te fixer des objectifs clairs ou juste débloquer une situation précise, tu pourras poser toutes tes questions via notre Discord. <br><br>
+      • Suivi individuel et plan adapté à ton profil<br>
+      • Réponses concrètes à tes blocages personnels<br>
+      • Conseils en direct, planification, motivation, stratégie<br><br>
+      Le coaching, c’est l’accès à une expertise directement à ton service.
     </p>
   </div>
 
   <div class="prix-box">
     <h2>Prix : Variable</h2>
-    <p>Rejoins le serveur Discord pour accéder au coaching personnalisé.</p>
-    <a class="button" href="https://discord.gg/tonlien" target="_blank">Rejoindre le Discord</a>
+    <p>Rejoins le QG Discord pour accéder au coaching personnalisé.</p>
+    <a class="button" href="https://discord.gg/">Rejoindre le Discord</a>
   </div>
 </body>
 </html>

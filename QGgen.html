@@ -20,7 +20,15 @@
       font-size: 1.2em;
       margin-bottom: 2em;
     }
-    a {
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    a.button {
       color: #00ffff;
       font-weight: bold;
       text-decoration: none;
@@ -28,8 +36,10 @@
       padding: 10px 20px;
       border-radius: 6px;
       transition: all 0.3s ease;
+      width: 100%;
+      display: block;
     }
-    a:hover {
+    a.button:hover {
       background-color: #00ffff;
       color: #000;
     }
@@ -37,7 +47,12 @@
 </head>
 <body>
   <h1>Quartier Général</h1>
-  <p>Tu t'apprêtes à rejoindre un espace stratégique. Prends ça au sérieux.</p>
-  <a href="https://discord.gg/DwYjJp4PzR" target="_blank">→ Rejoindre maintenant</a>
+  <p>Choisis ton prochain mouvement :</p>
+  <div class="button-container">
+    <a class="button" href="https://discord.com/invite/TONDISCORD" target="_blank">→ Rejoindre le Discord</a>
+    <a class="button" href="formation.html">→ Voir les Formations</a>
+    <a class="button" href="https://instagram.com/TONCOMPTE" target="_blank">→ Nos Réseaux</a>
+  </div>
 </body>
 </html>
+

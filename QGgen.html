@@ -5,40 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Quartier Général</title>
   <style>
-    body {
-      background-color: #000;
-      color: #fff;
-      font-family: monospace;
-      text-align: center;
-      padding: 100px 20px;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
+
+    body {
+      font-family: monospace;
+      color: #fff;
+      text-align: center;
+      background-image: url('backQG.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      backdrop-filter: brightness(0.9);
+    }
+
     h1 {
       font-size: 3em;
       margin-bottom: 0.5em;
     }
+
     p {
       font-size: 1.2em;
       margin-bottom: 2em;
     }
+
     .button-container {
       display: flex;
       flex-direction: column;
       gap: 20px;
       align-items: center;
+      width: 100%;
       max-width: 400px;
-      margin: 0 auto;
     }
+
     a.button {
-      color: #00ffff;
-      font-weight: bold;
+      display: block;
+      width: 100%;
       text-decoration: none;
+      font-weight: bold;
+      color: #00ffff;
       border: 2px solid #00ffff;
-      padding: 10px 20px;
+      padding: 12px 24px;
       border-radius: 6px;
       transition: all 0.3s ease;
-      width: 100%;
-      display: block;
+      background-color: rgba(0, 0, 0, 0.4);
     }
+
     a.button:hover {
       background-color: #00ffff;
       color: #000;
@@ -49,10 +69,11 @@
   <h1>Quartier Général</h1>
   <p>Choisis ton prochain mouvement :</p>
   <div class="button-container">
-    <a class="button" href="https://discord.com/DwYjJp4PzR" target="_blank">→ Rejoindre le Discord</a>
+    <a class="button" href="https://discord.com/invite/TONDISCORD" target="_blank">→ Rejoindre le Discord</a>
     <a class="button" href="formation.html">→ Voir les Formations</a>
-    <a class="button" href="https://instagram.com/TONCOMPTE" target="_blank">→ Nos Réseaux</a>
+    <a class="button" href="https://instagram.com/TONINSTAGRAM" target="_blank">→ Nos Réseaux</a>
   </div>
 </body>
 </html>
+
 

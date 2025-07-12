@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Détail - Pack Global</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: white;
+      font-family: monospace;
+      display: flex;
+      flex-direction: row;
+      height: 100vh;
+      animation: slideFade 1.8s ease-out;
+    }
+
+    @keyframes slideFade {
+      0% {
+        opacity: 0;
+        transform: translateX(-50px) scale(0.98);
+      }
+      50% {
+        opacity: 0.5;
+        transform: translateX(10px) scale(1.02);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+      }
+    }
+
+    .description {
+      flex: 3;
+      padding: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .description h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #00ffff;
+    }
+
+    .description p {
+      font-size: 1.1em;
+      line-height: 1.7em;
+    }
+
+    .prix-box {
+      flex: 1;
+      background-color: rgba(255, 255, 255, 0.05);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      border-left: 2px solid #00ffff;
+    }
+
+    .prix-box h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #00ffcc;
+    }
+
+    .prix-box p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .button {
+      background-color: #00ffff;
+      color: black;
+      padding: 12px 24px;
+      border: none;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="description">
+    <h1>Pack Global - Tout débloquer, d’un coup.</h1>
+    <p>
+      Le Pack Global regroupe absolument tous les contenus de la plateforme. C’est le pack ultime pour ceux qui veulent aller droit au but et ne rien laisser au hasard.<br><br>
+
+      <strong>✔ Package A</strong> : Discipline, routine, soin de soi, études, social, confiance, hacks de vie… tout ce qu’il faut pour construire une version forte, stable et stratégique de toi-même.<br><br>
+
+      <strong>✔ Package B</strong> : Création de revenus, business sur tes compétences, bibliothèque de ressources, apprentissage accéléré et méthode de progression autonome.<br><br>
+
+      <strong>✔ Toutes les formations à l’unité</strong> : Tu choisis de tout prendre, sans limite. Accès à chaque mini-formation, chaque domaine spécifique sans avoir à acheter séparément.<br><br>
+
+      <strong>✔ Bonus</strong> : Accès futur prioritaire aux mises à jour, aux réductions coaching, et aux nouveaux contenus KCI en avant-première.<br><br>
+
+      Tu veux gagner du temps, progresser à 360° et avoir tout entre tes mains ? Ce pack est conçu pour les plus déterminés.
+    </p>
+  </div>
+
+  <div class="prix-box">
+    <h2>40€</h2>
+    <p>Accès complet à toute la plateforme (form. A, B, unitaires, bonus). Détails complémentaires sur le Discord.</p>
+    <a class="button" href="#">Acheter maintenant</a>
+  </div>
+</body>
+</html>

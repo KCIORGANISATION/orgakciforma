@@ -14,6 +14,14 @@
       display: flex;
       flex-direction: row;
       height: 100vh;
+      animation: unblur 1.2s ease-out;
+      filter: blur(12px);
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes unblur {
+      from { filter: blur(12px); opacity: 0; }
+      to { filter: blur(0); opacity: 1; }
     }
 
     .description {
@@ -71,20 +79,22 @@
 </head>
 <body>
   <div class="description">
-    <h1>Package B - Business & Revenus</h1>
+    <h1>Package B - Business</h1>
     <p>
-      Tu veux gagner de l'argent intelligemment, selon ton âge et ton niveau ? Ce package est pour toi. Il comprend :<br><br>
-      <strong>Premiers Revenus</strong> : Comment générer quelques centaines d'euros même en étant jeune, sans compétences techniques.<br><br>
-      <strong>Construire un Business</strong> : Transforme ton temps libre, tes compétences et ta motivation en projets rentables à long terme.<br><br>
-      <strong>Sources & Ressources</strong> : Les meilleurs livres, sites et outils pour apprendre le business, l'argent et la stratégie personnelle.<br><br>
-      <strong>Méthodes de Travail</strong> : Techniques de concentration, méthode Pomodoro, planification et exécution régulière.
+      Ce package te montre comment faire tes premiers revenus selon ton âge et ton niveau. Tu y découvriras des méthodes simples pour générer rapidement de l'argent, poser les bases d’un business sérieux et durable, et optimiser ton temps de travail. <br><br>
+      • Débute avec des revenus rapides et accessibles<br>
+      • Apprends à créer un business basé sur tes compétences<br>
+      • Accède à une bibliothèque de ressources : livres, sites, outils<br>
+      • Apprends à apprendre vite, longtemps, efficacement (Pomodoro, deep work, etc.)<br><br>
+      Construit ton autonomie financière dès maintenant.
     </p>
   </div>
 
   <div class="prix-box">
-    <h2>30€</h2>
-    <p>Pack business complet : revenus, projets, discipline, outils.</p>
-    <a class="button" href="#">Acheter maintenant</a>
+    <h2>Prix : 30€</h2>
+    <p>Un pack complet pour poser les bases de ton business personnel.</p>
+    <a class="button" href="https://kciorganisation.github.io/orgakciforma">Acheter maintenant</a>
   </div>
 </body>
 </html>
+
